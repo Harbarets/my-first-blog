@@ -1,0 +1,8 @@
+from django.shortcuts import render
+from django.conf.urls import url
+from . import views
+urlpatterns = [
+    url(r'^$', views.post_list, name='post_list'),
+]
+
+# Create your views here.
